@@ -14,3 +14,5 @@ See the Color LCD wiki here: https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki/
 See the additional wiki here: https://github.com/emmebrusa/Color_LCD_860C/wiki
 
 Updated manuals: https://github.com/emmebrusa/TSDZ2-Smart-EBike-860C/blob/master/manuals/TSDZ2-OSF-V20.1C.4-3-860C-Display-Configuration-Guide.pdf
+
+Updated manuals in FRENCH : https://github.com/SykloFR/Color_LCD_860C_V1.2/blob/master/manual/Manuel%20TSDZ2%20w_860C%20OSF%20Upgrade%20V20.1C.4-3%20FR.pdf
