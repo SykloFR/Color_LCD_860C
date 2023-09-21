@@ -14,6 +14,8 @@
 #ifdef DISPLAY_860C
 #define SYSTEM_POWER_ON_OFF__PORT                   GPIOA
 #define SYSTEM_POWER_ON_OFF__PIN                    GPIO_Pin_11
+#define SYSTEM_POWER_2_ON_OFF__PORT                 GPIOA
+#define SYSTEM_POWER_2_ON_OFF__PIN                  GPIO_Pin_12
 #endif
 
 #ifdef DISPLAY_850C
@@ -42,11 +44,11 @@
 #define LCD_BUS__PORT                               GPIOB
 
 #define BUTTON_UP__PORT                             GPIOC
-#define BUTTON_UP__PIN                              GPIO_Pin_11
+#define BUTTON_UP__PIN                              GPIO_Pin_1
 #define BUTTON_ONOFF__PORT                          GPIOC
 #define BUTTON_ONOFF__PIN                           GPIO_Pin_12
-#define BUTTON_DOWN__PORT                           GPIOA
-#define BUTTON_DOWN__PIN                            GPIO_Pin_15
+#define BUTTON_DOWN__PORT                           GPIOC
+#define BUTTON_DOWN__PIN                            GPIO_Pin_0
 #ifdef DISPLAY_860C
 #define BUTTON_M__PORT                              GPIOC
 #define BUTTON_M__PIN                               GPIO_Pin_2

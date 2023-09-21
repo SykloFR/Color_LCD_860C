@@ -16,7 +16,7 @@
  */
 void adc_init() {
 	GPIO_InitTypeDef ginit;
-	ginit.GPIO_Pin = GPIO_Pin_4;
+	ginit.GPIO_Pin = GPIO_Pin_1;
 	ginit.GPIO_Mode = GPIO_Mode_AIN; //GPIO Pin as analog Mode
 	ginit.GPIO_Speed = GPIO_Speed_50MHz;
 
@@ -28,7 +28,7 @@ void adc_init() {
 	ADC_InitStruct.ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;
 	ADC_Init(ADC1, &ADC_InitStruct);
 	ADC_Cmd(ADC1, ENABLE);
-	ADC_RegularChannelConfig(ADC1, ADC_Channel_4, 1, ADC_SampleTime_239Cycles5);
+	ADC_RegularChannelConfig(ADC1, ADC_Channel_1, 1, ADC_SampleTime_239Cycles5);
 
 	// Queue up a conversion
 	ADC_SoftwareStartConvCmd(ADC1, ENABLE);

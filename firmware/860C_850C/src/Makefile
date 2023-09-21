@@ -49,7 +49,7 @@ CFLAGS += -DUSE_WITH_BOOTLOADER
 LFLAGS = -Xlinker --defsym=USE_WITH_BOOTLOADER=1
 endif
 
-TCPREFIX  = arm-none-eabi-
+TCPREFIX := /usr/local/arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-
 CC      = $(TCPREFIX)gcc
 AS      = $(TCPREFIX)as 
 LD      = $(TCPREFIX)gcc -v # use GCC and not LD so the math functions work like atan2()
@@ -84,6 +84,7 @@ CFLAGS += -std=c99 --specs=nano.specs --specs=nosys.specs -Wall  -I../../common/
 
 LFLAGS  += -Tstm32_flash.ld -L/usr/lib/gcc/arm-none-eabi/4.9.3/armv7-m -lgcc -lm -nostartfiles -lnosys -mcpu=cortex-m3 -mthumb -Wl,--gc-sections
 
+
 LFLAGS += --specs=nano.specs --specs=nosys.specs # to use newlib nano
 LFLAGS += -Xlinker -Map=main.map
 #LFLAGS += -u _printf_float # newlib nano printf use floats
@@ -105,7 +106,7 @@ OBJECTS = $(foreach x, $(basename $(SOURCES)), $(OBJDIR)/$(x).o)
 # OPENOCD_BIN := openocd.exe
 # NRFUTIL := $(SDK_ROOT)/external_tools/Windows/nrfutil.exe
 
-OPENOCD_PATH := /usr/local/share/openocd/bin
+OPENOCD_PATH := /usr/bin
 OPENOCD_BIN := openocd
 NRFUTIL := nrfutil
 
