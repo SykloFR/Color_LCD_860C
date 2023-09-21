@@ -1,5 +1,5 @@
 # Color_LCD_860V1.2
-This is a fork a inital Emmebrusa work but adapted to new 860C PCB and microchip since V1.2 released in mid 2023
+This is a fork of Emmebrusa work but adapted to new 860C PCB and microchip since V1.2 released in mid 2023
 
 This firmware is for 860C version 1.2 ONLY and should work together with latest Emmebrusa Open source firmware TSDZ2 for the motor controler (.hex file)
 
